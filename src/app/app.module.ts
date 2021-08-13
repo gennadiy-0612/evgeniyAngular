@@ -14,6 +14,7 @@ import { RentautoComponent } from './rentauto/rentauto.component';
 import { FaqComponent } from './faq/faq.component';
 import { MorefaqComponent } from './morefaq/morefaq.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { FootComponent } from './foot/foot.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ContactsComponent } from './contacts/contacts.component';
     RentautoComponent,
     FaqComponent,
     MorefaqComponent,
-    ContactsComponent
+    ContactsComponent,
+    FootComponent
   ],
   imports: [
     BrowserModule
