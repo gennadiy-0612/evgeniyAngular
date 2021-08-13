@@ -8,6 +8,8 @@ import { BackComponent } from './back/back.component';
 import { ChoicezoneComponent } from './choicezone/choicezone.component';
 import { ConditionsComponent } from './conditions/conditions.component';
 import { FreeComponent } from './free/free.component';
+import { AdvantagesComponent } from './advantages/advantages.component';
+import { ImotionsComponent } from './imotions/imotions.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { FreeComponent } from './free/free.component';
     BackComponent,
     ChoicezoneComponent,
     ConditionsComponent,
-    FreeComponent
+    FreeComponent,
+    AdvantagesComponent,
+    ImotionsComponent
   ],
   imports: [
     BrowserModule
