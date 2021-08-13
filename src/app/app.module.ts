@@ -13,6 +13,7 @@ import { ImotionsComponent } from './imotions/imotions.component';
 import { RentautoComponent } from './rentauto/rentauto.component';
 import { FaqComponent } from './faq/faq.component';
 import { MorefaqComponent } from './morefaq/morefaq.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MorefaqComponent } from './morefaq/morefaq.component';
     ImotionsComponent,
     RentautoComponent,
     FaqComponent,
-    MorefaqComponent
+    MorefaqComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule
