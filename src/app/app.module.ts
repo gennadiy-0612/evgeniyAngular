@@ -10,6 +10,8 @@ import { ConditionsComponent } from './conditions/conditions.component';
 import { FreeComponent } from './free/free.component';
 import { AdvantagesComponent } from './advantages/advantages.component';
 import { ImotionsComponent } from './imotions/imotions.component';
+import { RentautoComponent } from './rentauto/rentauto.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ImotionsComponent } from './imotions/imotions.component';
     ConditionsComponent,
     FreeComponent,
     AdvantagesComponent,
-    ImotionsComponent
+    ImotionsComponent,
+    RentautoComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule
