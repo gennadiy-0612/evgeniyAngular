@@ -7,6 +7,7 @@ import { RentComponent } from './rent/rent.component';
 import { BackComponent } from './back/back.component';
 import { ChoicezoneComponent } from './choicezone/choicezone.component';
 import { ConditionsComponent } from './conditions/conditions.component';
+import { FreeComponent } from './free/free.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ConditionsComponent } from './conditions/conditions.component';
     RentComponent,
     BackComponent,
     ChoicezoneComponent,
-    ConditionsComponent
+    ConditionsComponent,
+    FreeComponent
   ],
   imports: [
     BrowserModule
