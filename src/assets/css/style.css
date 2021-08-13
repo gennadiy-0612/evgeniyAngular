@@ -613,6 +613,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 25px 0 0;
+    margin: auto;
   }
 
   .slide {
@@ -668,11 +669,15 @@ body {
 
   .agree + h4 + p {
     display: none;
+    opacity: 0;
+    transition-duration: .7s;
+    transition-property: opacity;
   }
 
   .agree:checked + h4 + p {
     display: block;
     height: auto;
+    opacity: 1;
   }
 
   .questions {
@@ -1350,7 +1355,7 @@ body {
     width: 2px;
     height: 70px;
     background: #333333;
-    right: -562px;
+    right: -507px;
     top: -11px;
     box-shadow: none;
   }
@@ -1685,10 +1690,14 @@ body {
   .agree:checked + h4 + p {
     display: block;
     height: 73px;
+    opacity: 1;
   }
 
   .agree + h4 + p {
     display: none;
+    opacity: 0;
+    transition-duration: .7s;
+    transition-property: opacity;
   }
 
   .flexing {
@@ -1698,6 +1707,7 @@ body {
     align-items: flex-start;
     width: 1146px;
     padding: 26px 27px;
+    margin: auto;
   }
 
   .slide .agree {
@@ -2094,5 +2104,6 @@ div.car a.read {
   animation: .7s ease-out 0s infinite alternate appear;
   animation-iteration-count: 1;
 }
+
 /*Bug fixed*/
 

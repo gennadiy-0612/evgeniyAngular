@@ -37,7 +37,7 @@
 function bugIE(base, added) {
     let images = new Image()
     images.hasWebP = true;
-    images.src = './img/car.webp';
+    images.src = './assets/img/car.webp';
     images.onerror = function () {
         images.hasWebP = false;
         images.setting();
