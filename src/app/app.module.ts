@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { RentComponent } from './rent/rent.component';
 import { BackComponent } from './back/back.component';
+import { ChoicezoneComponent } from './choicezone/choicezone.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     RentComponent,
-    BackComponent
+    BackComponent,
+    ChoicezoneComponent
   ],
   imports: [
     BrowserModule
