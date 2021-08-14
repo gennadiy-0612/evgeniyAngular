@@ -1888,6 +1888,14 @@ body {
     line-height: 20px;
     background-color: rgba(255, 0, 0, 0.85);
   }
+
+  .li.show, li.active,
+  .li.hide {
+    display: flex;
+    width: initial;
+    margin: auto;
+    padding: 15px 30px;
+  }
 }
 
 @media (max-width: 270px) {
@@ -2076,13 +2084,6 @@ div.car a.read {
 .show, .active {
   animation: .7s linear 0s infinite alternate move_eye;
   animation-iteration-count: 1;
-}
-
-.li.show, li.active,
-.li.hide {
-  display: flex;
-  width: initial;
-  margin: auto;
 }
 
 @keyframes move_eye {

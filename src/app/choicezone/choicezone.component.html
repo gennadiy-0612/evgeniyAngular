@@ -5,7 +5,7 @@
     <li (click)="showAuto('show')" class="kind mechanic active switchMechanic {{auto.className}} li">Механическая</li>
     <li (click)="showMech('show')" class="kind automate not-active switchAutomate {{mech.className}} li">Автоматическая</li>
   </ul>
-  <div #mech class="techno mech show">
+  <div #mech class="techno mech show {{mech.className}}">
     <div class="car">
       <div class="data">
         <h3 class="info read">Mazda 6</h3>
@@ -103,7 +103,7 @@
       </div>
     </div>
   </div>
-  <div #auto class="techno auto hide">
+  <div #auto class="techno auto hide {{auto.className}}">
     <div class="car">
       <div class="data">
         <h3 class="info read">ВАЗ kalina</h3>

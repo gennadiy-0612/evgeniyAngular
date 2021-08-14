@@ -7,7 +7,6 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ChoicezoneComponent implements OnInit {
   auto = 'active';
-  mech = '';
 
   showAuto(SelectorAuto): void {
     document.querySelector('.techno.auto').setAttribute('class', 'techno auto ' + SelectorAuto);
