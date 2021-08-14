@@ -15,7 +15,6 @@ import { FaqComponent } from './faq/faq.component';
 import { MorefaqComponent } from './morefaq/morefaq.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FootComponent } from './foot/foot.component';
-import { ChoceanchorComponent } from './choceanchor/choceanchor.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +31,7 @@ import { ChoceanchorComponent } from './choceanchor/choceanchor.component';
     FaqComponent,
     MorefaqComponent,
     ContactsComponent,
-    FootComponent,
-    ChoceanchorComponent
+    FootComponent
   ],
   imports: [
     BrowserModule

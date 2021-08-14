@@ -1174,11 +1174,9 @@ body {
     background: url(../img/mazda-6.png) left center no-repeat;
   }
 
-
   .car:nth-child(2) {
     background: url(../img/chevrolet-lacetti.png) left center no-repeat;
   }
-
 
   .car:nth-child(3) {
     background: url(../img/chevrolet-aveo.png) left center no-repeat;
@@ -1980,7 +1978,6 @@ body {
   }
 }
 
-
 .per.day + p, .q {
   display: flex;
   justify-content: center;
@@ -2080,6 +2077,11 @@ div.car a.read {
   animation-iteration-count: 1;
 }
 
+.li.show, li.active {
+  display: flex;
+  width: initial;
+}
+
 @keyframes move_eye {
   from {
     opacity: 0;
@@ -2106,4 +2108,3 @@ div.car a.read {
 }
 
 /*Bug fixed*/
-
