@@ -3,7 +3,7 @@
   <h3 class="variant">Выберете вариацию <strong>КПП</strong></h3>
   <ul class="what">
     <li (click)="showAuto('show')" class="kind mechanic active switchMechanic {{auto.className}} li">Механическая</li>
-    <li (click)="showMech('show')" class="kind automate not-active switchAutomate{{mech.className}} li">Автоматическая</li>
+    <li (click)="showMech('show')" class="kind automate not-active switchAutomate {{mech.className}} li">Автоматическая</li>
   </ul>
   <div #mech class="techno mech show">
     <div class="car">

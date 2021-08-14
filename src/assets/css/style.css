@@ -1139,8 +1139,9 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 24px 0;
+    margin: 24px auto;
     padding: 0;
+    width: 460px;
   }
 
   .kind, .changing .read, .call-back input {
@@ -2077,9 +2078,11 @@ div.car a.read {
   animation-iteration-count: 1;
 }
 
-.li.show, li.active {
+.li.show, li.active,
+.li.hide {
   display: flex;
   width: initial;
+  margin: auto;
 }
 
 @keyframes move_eye {
