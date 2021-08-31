@@ -1,60 +1,61 @@
-<div class="emotions">
-  <h2 class="t">Отзывы</h2>
+<div class="emotions" id="counter">
+  <h2 class="t">Відгуки</h2>
   <div class="slider show">
     <p class="port"></p>
-    <h3 class="tt">Екатерина Воронцова</h3>
-    <p class="te">Брала автомобиль Mazda 6 на три дня - и не прогадала. Машина обслужина и ухожена. Цена
-      устроила. Оформили аренду быстро через интернет, на все про все ушло минут 15</p>
+    <h3 class="tt">Катерина Воронцова</h3>
+    <p class="te">Брала авто Mazda 6 на три дні - и не прогавила. Помітноб що машина була в обслугованні и доглянута.
+      Цена
+      влаштовує. Оформили оренду швидко через інтернет, на все про все пішло хвилин 15</p>
     <div class="buttons">
-      <a title="Title" class="make choice" href="#">Аудио-отзыв</a>
-      <a title="Title" class="make choice" href="#">Видео-отзыв</a>
+      <a routerLink="#" title="Title" class="make choice">Аудіо-відгук</a>
+      <a routerLink="#" title="Title" class="make choice">Відео-відгук</a>
     </div>
   </div>
   <div class="slider">
     <p class="port"></p>
     <h3 class="tt">Александр</h3>
-    <p class="te">Хорошие ребята, общительные, вежливые, всегда готовы помочь, подсказать. Автомобиль оказался
-      без
-      проблем, в общем всем доволен. Желаю удачи и хороших клиентов. Рекомендую (ЯНАО).</p>
+    <p class="te">Хороші хлопці, товариські, ввічливі, завжди готові допомогти, підказати. Автомобіль виявився без
+      проблем, в загальному всім задоволений. Бажаю удачі і хороших клієнтів. Рекомендую (ЯНАО).</p>
     <div class="buttons">
-      <a title="Title" class="make choice" href="">Аудио-отзыв</a>
-      <a title="Title" class="make choice" href="">Видео-отзыв</a>
+      <a routerLink="#" title="Title" class="make choice">Аудіо-відгук</a>
+      <a routerLink="#" title="Title" class="make choice">Відео-відгук</a>
     </div>
   </div>
   <div class="slider">
     <p class="port"></p>
     <h3 class="tt">Станислав </h3>
-    <p class="te">Условия проката, оперативность, техническое состояние автомобилей на уровне. Спасибо!</p>
+    <p class="te">Умови прокату, оперативність, технічний стан автомобілів на рівні. Спасибі!</p>
     <div class="buttons">
-      <a title="Title" class="make choice" href="">Аудио-отзыв</a>
-      <a title="Title" class="make choice" href="">Видео-отзыв</a>
+      <a routerLink="#" title="Title" class="make choice">Аудіо-відгук</a>
+      <a routerLink="#" title="Title" class="make choice">Відео-відгук</a>
     </div>
   </div>
   <div class="slider">
     <p class="port"></p>
     <h3 class="tt">Роман Ивашов</h3>
-    <p class="te">Хорошие автомобили и хозяин, и отношение к клиентам. Рекомендую.</p>
+    <p class="te">Хороші автомобілі і господар, і ставлення до клієнтів. Раджу</p>
     <div class="buttons">
-      <a title="Title" class="make choice" href="">Аудио-отзыв</a>
-      <a title="Title" class="make choice" href="">Видео-отзыв</a>
+      <a routerLink="#" title="Title" class="make choice">Аудіо-відгук</a>
+      <a routerLink="#" title="Title" class="make choice">Відео-відгук</a>
     </div>
   </div>
   <div class="slider">
     <p class="port"></p>
     <h3 class="tt">Алексей</h3>
-    <p class="te">Машина в хорошем техническом состоянии, свозила на “дальняк” без эксцессов.</p>
+    <p class="te">Машина в хорошому технічному стані, звозила на "дальняк" без ексцесів.</p>
     <div class="buttons">
-      <a title="Title" class="make choice" href="">Аудио-отзыв</a>
-      <a title="Title" class="make choice" href="">Видео-отзыв</a>
+      <a routerLink="#" title="Title" class="make choice">Аудіо-відгук</a>
+      <a routerLink="#" title="Title" class="make choice">Відео-відгук</a>
     </div>
   </div>
   <p class="counter">
-    <span class="emotion-number active">1</span>
+    <span class="emotion-number active" (click)="indicateChange('slider','notAactive','show')">1</span>
     <span class="emotion-number">2</span>
     <span class="emotion-number">3</span>
     <span class="emotion-number">4</span>
     <span class="emotion-number">5</span>
   </p>
-  <a title="Title" class="back-go" href="#"></a>
-  <a title="Title" class="forward-go" href="#"></a>
+  <a routerLink="#counter" (click)="back('.emotion-number', 'notAactive','.slider')" title="Title" class="back-go"></a>
+  <a routerLink="#counter" (click)="forward('.emotion-number','notAactive', '.slider')" title="Title"
+     class="forward-go"></a>
 </div>

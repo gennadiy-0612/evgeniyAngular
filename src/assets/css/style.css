@@ -34,6 +34,10 @@
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -50,6 +54,17 @@ body {
   a.make.choice {
     margin: 30px 0 0;
   }
+}
+
+
+.ShowAutoDetail,
+.ShowTechDetail {
+  display: block;
+}
+
+.HideAutoDetail,
+.HideTechDetail {
+  display: none;
 }
 
 @media (max-width: 1199px) {
@@ -841,7 +856,7 @@ body {
     margin: 0;
   }
 
-  .more.q, .hide {
+  .hide {
     display: none;
   }
 
@@ -1668,7 +1683,7 @@ body {
   }
 
   .rent-auto p::after {
-    content: 'Примерно 5 минут';
+    content: 'Приблизно 5 хвилин';
     position: absolute;
     display: block;
     left: -293px;
@@ -1889,12 +1904,19 @@ body {
     background-color: rgba(255, 0, 0, 0.85);
   }
 
-  .li.show, li.active,
-  .li.hide {
-    display: flex;
-    width: initial;
-    margin: auto;
-    padding: 15px 30px;
+  .Choice.Active {
+    color: #FFFFFF;
+    background-color: #333333;
+  }
+
+  .Choice.NotActive {
+    background-color: #FFFFFF;
+    color: #333333;
+  }
+
+  .techno {
+    transition-property: left;
+    transition-duration: .9s;
   }
 }
 

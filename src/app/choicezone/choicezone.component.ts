@@ -6,16 +6,23 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./choicezone.component.css']
 })
 export class ChoicezoneComponent implements OnInit {
-  auto = 'active';
+  AutoActive = '';
+  autoDetailAct: string;
+  TechActive = '';
+  techDetailAct: string;
 
   showAuto(SelectorAuto): void {
-    document.querySelector('.techno.auto').setAttribute('class', 'techno auto ' + SelectorAuto);
-    document.querySelector('.techno.mech').setAttribute('class', 'techno mech hide');
+    this.AutoActive = SelectorAuto;
+    this.TechActive = 'Choice NotActive ';
+    this.autoDetailAct = 'ShowTechDetail';
+    this.techDetailAct = 'HideTechDetail';
   }
 
-  showMech(SelectorMach): void {
-    document.querySelector('.techno.auto').setAttribute('class', 'techno auto hide');
-    document.querySelector('.techno.mech').setAttribute('class', 'techno mech ' + SelectorMach);
+  showTech(SelectorAuto): void {
+    this.TechActive = SelectorAuto;
+    this.AutoActive = 'Choice NotActive ';
+    this.techDetailAct = 'ShowTechDetail';
+    this.autoDetailAct = 'HideAutoDetail';
   }
 
   constructor() {

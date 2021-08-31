@@ -144,8 +144,6 @@ function ScrollDetect(whoIsAnimate, whatKindAnimate) {
     this.initProps();
     if ((this.elPositonY + 100) > Math.floor(window.scrollY) && Math.floor(window.scrollY) > (this.elPositonY - this.windowH)) {
       this.elementWork.setAttribute('class', this.initClass + ' ' + this.animateClass);
-      console.clear();
-      console.log(this.elementWork);
     } else {
       this.elementWork.setAttribute('class', this.initClass);
     }
