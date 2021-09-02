@@ -7,8 +7,8 @@
       Цена
       влаштовує. Оформили оренду швидко через інтернет, на все про все пішло хвилин 15</p>
     <div class="buttons">
-      <a routerLink="#" title="Title" class="make choice">Аудіо-відгук</a>
-      <a routerLink="#" title="Title" class="make choice">Відео-відгук</a>
+      <a href="#" title="Title" class="make choice">Аудіо-відгук</a>
+      <a href="#" title="Title" class="make choice">Відео-відгук</a>
     </div>
   </div>
   <div class="slider">
@@ -17,8 +17,8 @@
     <p class="te">Хороші хлопці, товариські, ввічливі, завжди готові допомогти, підказати. Автомобіль виявився без
       проблем, в загальному всім задоволений. Бажаю удачі і хороших клієнтів. Рекомендую (ЯНАО).</p>
     <div class="buttons">
-      <a routerLink="#" title="Title" class="make choice">Аудіо-відгук</a>
-      <a routerLink="#" title="Title" class="make choice">Відео-відгук</a>
+      <a href="#" title="Title" class="make choice">Аудіо-відгук</a>
+      <a href="#" title="Title" class="make choice">Відео-відгук</a>
     </div>
   </div>
   <div class="slider">
@@ -26,8 +26,8 @@
     <h3 class="tt">Станислав </h3>
     <p class="te">Умови прокату, оперативність, технічний стан автомобілів на рівні. Спасибі!</p>
     <div class="buttons">
-      <a routerLink="#" title="Title" class="make choice">Аудіо-відгук</a>
-      <a routerLink="#" title="Title" class="make choice">Відео-відгук</a>
+      <a href="#" title="Title" class="make choice">Аудіо-відгук</a>
+      <a href="#" title="Title" class="make choice">Відео-відгук</a>
     </div>
   </div>
   <div class="slider">
@@ -35,8 +35,8 @@
     <h3 class="tt">Роман Ивашов</h3>
     <p class="te">Хороші автомобілі і господар, і ставлення до клієнтів. Раджу</p>
     <div class="buttons">
-      <a routerLink="#" title="Title" class="make choice">Аудіо-відгук</a>
-      <a routerLink="#" title="Title" class="make choice">Відео-відгук</a>
+      <a href="#" title="Title" class="make choice">Аудіо-відгук</a>
+      <a href="#" title="Title" class="make choice">Відео-відгук</a>
     </div>
   </div>
   <div class="slider">
@@ -44,18 +44,18 @@
     <h3 class="tt">Алексей</h3>
     <p class="te">Машина в хорошому технічному стані, звозила на "дальняк" без ексцесів.</p>
     <div class="buttons">
-      <a routerLink="#" title="Title" class="make choice">Аудіо-відгук</a>
-      <a routerLink="#" title="Title" class="make choice">Відео-відгук</a>
+      <a href="#" title="Title" class="make choice">Аудіо-відгук</a>
+      <a href="#" title="Title" class="make choice">Відео-відгук</a>
     </div>
   </div>
   <p class="counter">
-    <span class="emotion-number active" (click)="indicateChange('slider','notAactive','show')">1</span>
-    <span class="emotion-number">2</span>
-    <span class="emotion-number">3</span>
-    <span class="emotion-number">4</span>
-    <span class="emotion-number">5</span>
+    <span class="emotion-number active" (click)="indicateChange('.emotion-number','notAactive','.slider', $event.target)">1</span>
+    <span class="emotion-number" (click)="indicateChange('.emotion-number','notAactive','.slider', $event.target)">2</span>
+    <span class="emotion-number" (click)="indicateChange('.emotion-number','notAactive','.slider', $event.target)">3</span>
+    <span class="emotion-number" (click)="indicateChange('.emotion-number','notAactive','.slider', $event.target)">4</span>
+    <span class="emotion-number" (click)="indicateChange('.emotion-number','notAactive','.slider', $event.target)">5</span>
   </p>
-  <a routerLink="#counter" (click)="back('.emotion-number', 'notAactive','.slider')" title="Title" class="back-go"></a>
-  <a routerLink="#counter" (click)="forward('.emotion-number','notAactive', '.slider')" title="Title"
+  <a href="#counter" (click)="back('.emotion-number', 'notAactive','.slider')" title="Title" class="back-go"></a>
+  <a href="#counter" (click)="forward('.emotion-number','notAactive', '.slider')" title="Title"
      class="forward-go"></a>
 </div>

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 
 @Component({
   selector: 'app-imotions',
@@ -54,12 +54,11 @@ export class ImotionsComponent implements OnInit {
     this.moveNew();
   }
 
-  indicateChange(ChangeIt: any, NotAct: any, ChangeItTwo: any): void{
+  indicateChange(ChangeIt, NotAct, ChangeItTwo, numberSlide): void {
     this.startIt(ChangeIt, ChangeItTwo);
     this.ActTag.setAttribute('class', NotAct);
     this.ActiveSlide.setAttribute('class', 'slider');
-    this.counter < this.count ? this.counter++ : this.counter = 0;
-    console.log(this);
+    this.counter = numberSlide.textContent - 1;
     this.moveNew();
   }
 
